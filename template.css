@@ -1,0 +1,106 @@
+/* {box-sizing: border-box}
+
+/* Add padding to containers */
+
+/* Full-width input fields */
+Input[type=text]:focus, input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+table,tr{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+
+    border: 1px solid #ccc;
+    padding-top: 16px;
+  }
+
+  input[type=text], input[type=password]:focus {
+  width: 100%;
+    padding: 12px 20px;
+    
+   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Overwrite default styles of hr */
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+ background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+ .container1 {
+    padding: 10px;
+   
+  }
+  .container{
+    padding: 10px;
+  }
+ 
+/* Add a blue text color to links */
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  body{
+    /* The image used */
+    background-image: url("12.jpeg");
+  /*  background-color: lightblue;*/
+  
+    /* Add the blur effect 
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 50%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+   hr { 
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+     padding: 2px;
+     box-shadow: 0 5px 5px -5px rgb(29, 28, 28);
+  }

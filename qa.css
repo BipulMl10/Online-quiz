@@ -1,0 +1,89 @@
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-radius: 20px;
+
+    padding-top: 16px;
+    align: center;
+  }
+  body{
+    /* The image used */
+    background-image: url("12.jpeg");
+  /*  background-color: lightblue;*/
+  
+    /* Add the blur effect 
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 50%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+   th, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-radius: 20px;
+    padding-top: 16px;
+    text-align: center;
+   }
+  .container1 {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: -8px;
+  }
+  .container{
+    width: 70%;
+    margin: -8px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  form {
+    border: 3px solid #f1f1f1;
+    width:50;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+  }
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  .registerbtn {
+    background-color: #4CAF50;
+       color: white;
+       padding: 14px 20px;
+       margin: 8px 0;
+       border: none;
+       cursor: pointer;
+       width: 40%;
+       border-radius: 20px;
+   }
+   
+   .registerbtn:hover {
+     opacity:1;
+   }
+
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }

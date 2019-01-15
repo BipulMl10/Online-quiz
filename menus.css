@@ -1,0 +1,21 @@
+.container1 {
+    padding: 10px;
+    border-radius: 20px;
+    margin: -8px;
+  }
+ body {
+    /* The image used */
+    background-color: white;
+  
+    /* Add the blur effect */
+  
+  
+    /* Full height */
+    height: 60%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

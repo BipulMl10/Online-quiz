@@ -1,0 +1,33 @@
+.iframe-container {
+    padding-top: 56.25%;
+    position: relative;
+  }
+  
+  .iframe-container iframe {
+     border: 1px;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 20%;
+  }
+  
+  /* 4x3 Aspect Ratio */
+  .iframe-container-4x3 {
+    padding-top: 75%;
+    padding: 10px;
+  }
+
+.container1 {
+  padding: 10px;
+  border-radius: 20px;
+}
+.container3 {
+  padding: 10px;
+  margin: -8px;
+  height: 10%;
+}
+.container{
+  padding: 10px;
+
+}

@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+ body {
+    /* The image used */
+    background-image: url("1.jpeg");
+  
+    /* Control the height of the image */
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  table {
+    margin: -8px;
+    border-collapse: collapse;
+    border-radius: 20px;
+    
+    padding-top: 16px;
+  }
+  th, td{
+    margin: -8px;
+    border-collapse: collapse;
+    border-radius: 20px;
+    padding-top: 16px;
+  }
+
+  /* Add styles to the form container */
+  .container1 {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .container{
+    padding: 10px;
+  
+  }
+  .container3 {
+    padding: 10px;
+    margin: -8px;
+    height: 10%;
+  }
+ 
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
