@@ -1,19 +1,21 @@
 <?php
+session_start();
+?>
+<?php
 
 $conn=mysqli_connect("localhost","root","","project");
 
-/*$query1="DELETE FROM test";
-mysqli_query($conn,$query1);*/
+$testname=$_SESSION['testname'];
+$checked=$_POST['num'];
 
-    if(!empty($_POST['num'])) {
+    if(!empty($checked)) {
     
     // Counting number of checked checkboxes.
-    $checked_count = count($_POST['num']);
+    $checked_count = count($checked);
    
     
     // Loop to store and display values of individual checked checkbox.
-    foreach($_POST['num'] as $selected) {
-
+    foreach($checked as $selected) {
     $query="SELECT * FROM questionbank WHERE id=$selected";
     $get=mysqli_query($conn,$query);
     $row=mysqli_fetch_array($get);
@@ -24,13 +26,13 @@ mysqli_query($conn,$query1);*/
     $d=$row["d"];
     $ans=$row["e"];
 
-     $query2="INSERT INTO test(question,a,b,c,d,e)VALUES ('$question','$a',$b,'$c','$d','$ans')";
+
+    $query2="INSERT INTO `$testname`(`question`, `a`, `b`, `c`, `d`, `ans`) VALUES ('$question','$a','$b','$c','$d','$ans')";
     mysqli_query($conn,$query2);
     }
 }
-    header("location:qa.php");
-
-
+    $msg = "Test Created";
+    header("Location:createtest1.php?msg=$msg");
 mysqli_close($conn);
 
 ?>

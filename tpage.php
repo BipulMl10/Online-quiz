@@ -66,10 +66,10 @@ session_start();
             ?>
           
             <div  class="container3" style="background-color:Black">
-            <br>
-            <table width="100%" height="10%" align="center"  bgcolor="black">
+       
+            <table width="100%" height="8%" align="center"  bgcolor="black">
             <tr>
-                <th width="8%"><font size="4"><b><div  class="container1" style="background-color:Green">QuestionBanK</b></div></font></th>
+                <th width="8%"><font size="3"><b><div  class="container1" style="background-color:Green">QuestionBanK</b></div></font></th>
                 <th  width="72%"></th>
                 <th width="8%"><font size="3"><b><div  class="container1" style="background-color:Green">Teacher</div></b></font></th>
                 <th><font size="3"><b><div  class="container1" style="background-color:Blue"><?php echo "$name" ?></div></font></th>

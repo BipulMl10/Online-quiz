@@ -1,0 +1,10 @@
+CREATE TABLE Persons (
+    ID int NOT NULL AUTO_INCREMENT,
+    Name varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    dob int,
+    email varchar(30),
+    status varchar(10),
+    marks int,
+    PRIMARY KEY (ID)
+);

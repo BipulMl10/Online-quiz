@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>CodeQuotient | Dashboard</title>
+<!-- Tell the bots not to index these pages for searches -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<!--  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="cq.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- Main Header Navbar -->
+    <div class="col-md-12" style="box-shadow:5px 0px 8px #eee ; height:60px; margin-bottom:5px">
+	<div class="col-md-2" style="width:5% ; float:left ; ">
+		<div class="logo" style="margin-left:-22px">
+			<a href="/" ><img src="1.jpeg" class="img-responsive site_logo"/></a>
+		</div>
+	</div>
+	<div class="col-md-10 setHeadInSm" style="width:75%; float:left ; margin-top:10px">
+		<div class="col-md-4"></div>
+		<div class="col-md-4" >
+		</div>
+		<div class="col-md-4" > <span>
+                </span></div>
+	</div>
+	
+</div>
+</div>
+
+<div class="container-fluid dashboard-container">
+
+        <div class="col-md-12 dashboard-md-12">
+
+            <!-- Leftside bar -->
+            <script>
+    $(document).ready(function () {
+        var menuClosed = 0 ;
+        $("#iconsLeftBar").next().css("width","95%");
+        $("#logo1").next().css("width","95%");
+//        $("#fullLeftBar").css("display","none");
+//        $("#iconsLeftBar").css("display","block");
+        $(".menuButton").click(function(){
+            if(menuClosed){
+                //$("#iconsLeftBar").next().removeClass("col-md-10");
+                $("#iconsLeftBar").next().css("width","95%");
+                $("#fullLeftBar").css("display","none");
+                $("#iconsLeftBar").css("display","block");
+                $("#logo").css("display","none");
+                $("#logo1").css("display","block");
+                $("#logo1").next().css("width","95%");
+                menuClosed = 0 ;
+            }else{
+                //$("#iconsLeftBar").next().addClass("col-md-10");
+                $("#iconsLeftBar").next().css("width","83%");
+                $("#fullLeftBar").css("display","block");
+                $("#iconsLeftBar").css("display","none");
+                $("#logo1").css("display","none");
+                $("#logo").css("display","block");
+                $("#logo1").next().css("width","83%");
+                menuClosed = 1 ;
+            }
+        });
+    });
+</script>
+
+<div id="fullLeftBar" style="display:none" class="col-md-2 left-dashboard-menu">
+    <div id="menuButton" class="form-group execute_btn menuButton visible-lg" style="margin:0px 20px 10px 20px;cursor:pointer;">
+        <i class="fa fa-navicon" style="font-size:21px ; color:cornsilk"></i>
+    </div>
+    <ul class="dashboard-left-nav nav nav-tabs tabs-left">
+        <li id="usrhome">
+            <a href="/user-dashboard"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;Dashboard</a>
+        </li>
+        <!--<li id="userQuiz"><a href="/user-dashboard/user-quiz"><i class="glyphicon glyphicon-queen"></i>&nbsp;&nbsp;Quiz</a> </li>-->
+        <li id="userlst"> <a class="dropdown-item" href="/attempts/attemptedQuestion"><i class="fa fa-adjust"></i>&nbsp;&nbsp;My Attempts</a></li>
+        
+
+        <li id="project">
+            <a class="dropdown-item" href="/project/getProjectList">
+                <i class="fa fa-folder"></i>&nbsp;&nbsp;Project
+            </a></li>
+        <li id="ide"> <a class="dropdown-item" href="/code/"><span class="fa fa-code"></span>&nbsp;&nbsp;IDE </a></li>
+        
+        <li id="myTests"> <a class="dropdown-item" href="/user-dashboard/user-quiz" title="Test Attempts"><span class="fa fa-list"></span>&nbsp;&nbsp;Test Attempts</a></li>
+        
+        <li id="changePassword"> <a class="dropdown-item" href="/user-dashboard/changepassword"><i class="fa fa-lock"></i>&nbsp;&nbsp;Change Password</a></li>
+        <li> <a class="dropdown-item" href="/logout"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Logout</a></li>
+
+    </ul>
+</div>
+
+<div id="iconsLeftBar" class="col-md-2 left-dashboard-menu" style="width:5% ">
+    <div id="menuButton" class="form-group execute_btn menuButton visible-lg" style="margin:0px 20px 10px 20px;cursor:pointer">
+        <i class="fa fa-navicon" style="font-size:21px ; color:cornsilk"></i>
+    </div>
+    <ul class="dashboard-left-nav nav nav-tabs tabs-left">
+        <li id="usrhome">
+            <a title="Dashboard" href="/user-dashboard"><i class="fa fa-dashboard"></i></a>
+        </li>
+        <!--<li id="userQuiz"><a href="/user-dashboard/user-quiz"><i class="glyphicon glyphicon-queen"></i></a> </li>-->
+        <li id="userlst"> <a title="My Attempts" class="dropdown-item" href="/attempts/attemptedQuestion"><i class="fa fa-adjust"></i></a></li>
+        
+        <li id="project"> <a class="dropdown-item" href="/project/getProjectList" title="Project"><span class="fa fa-folder"></span></a></li>
+        <li id="ide" > <a title="IDE" class="dropdown-item" href="/code/"><span class="fa fa-code"></span></a></li>
+        
+        <li id="myTests"> <a class="dropdown-item" href="/user-dashboard/user-quiz" title="Test Attempts"><span class="fa fa-list"></span></a></li>
+        
+        <li id="changePassword"> <a title="Change password" class="dropdown-item" href="/user-dashboard/changepassword"><i class="fa fa-lock"></i></a></li>
+        <li> <a title="Logout" class="dropdown-item" href="/logout"><i class="fa fa-sign-in"></i></a></li>
+
+    </ul>
+</div>
+
+</body>
+</html>

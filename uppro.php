@@ -1,3 +1,10 @@
+<?php 
+ if(isset($_GET['msg'])){
+  echo '<script language="javascript">';
+    echo 'alert("Sucessfully Updated")';
+    echo '</script>';
+}
+  ?>
 <!DOCTYPE html>
 <html>
    <meta charset="utf-8" />
@@ -27,8 +34,14 @@ session_start();
  <h1 ><font size="8"><b>Update</b></font></h1>
 </th></tr>
 <tr><td>
-<p><font size="5"><b>Name</p><br><?php echo "$name" ?></b></font></p><hr>
-<p><font size="5"><b>Status</p><?php echo "$status" ?></b></font></p><br>
+<label for="photo"><b>Upload photo</b></label><br><br>
+    <input type="file" name="myimage" id="photo" />
+    <br>
+</td>
+</tr>
+<tr><td>
+<p><font size="5"><b>Name</p><p><b><?php echo "$name" ?></b></p></font></p><hr>
+<p><font size="5"><b>Status</p><p><b><?php echo "$status" ?></b></P></font></p><br>
 </td>
  <td>
     <label for="phone">Enter your phone number:</label><br>

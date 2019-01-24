@@ -14,22 +14,17 @@ if(mysqli_num_rows($get)>0){
 
     $query1="UPDATE login SET password='$newpass' WHERE id=$id";
     mysqli_query($conn,$query1);
-
-    ?>
-<script type="text/javascript">
-alert("review your answer");
-window.location.href = "pass.html";
-</script>
+$msg = "Password Changed";
+header("Location:pass1.php?msg=$msg");
+?>
 <?php
 }
 else{
-    ?>
-<script type="text/javascript">
-alert("review your answer");
-window.location.href = "pass.html";
-</script>
+
+$msg = "Current Password Incorrect!";
+header("Location:pass1.php?msg=$msg");
+?>
 <?php
 }
-header("location:pass.html");
 mysqli_close($conn);
 ?>

@@ -8,6 +8,16 @@ session_start();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <link rel="stylesheet" href="home.css">
+  <script>
+function bigImg(x) {
+  x.style.height = "420px";
+  x.style.width = "400px";
+}
+function normalImg(x) {
+  x.style.height = "330px";
+  x.style.width = "390px";
+}
+</script>
 </head>
 <body>
             <?php
@@ -16,7 +26,7 @@ session_start();
             $dob=$_SESSION['dob'];
             $phone=$_SESSION['phone'];
             $status=$_SESSION['status'];
-           // $photo=$_SESSION['photo'];
+           $photo=$_SESSION['photo'];
           // $pass=$_SESSION['password'];
             //$id=$_SESSION['id'];
             
@@ -33,8 +43,11 @@ session_start();
 
             <table width="100%" height="50%" >
                 <tr>
-                <td>
-                   
+                <td rowspan="2" width="20%">
+           <div class="container" style="background-color:rgba(0,0,0, 0.4)" >
+            <p><img src="<?php echo "$photo" ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" height="330dp" width="290dp"></p>
+            </div></td>
+                <td> 
                 <div class="container"  style="background-color:rgba(0,0,0, 0.4)" >
            <p><font size="5"><b>Name</p><hr><?php echo "$name" ?></b></font>
            </div></td>
@@ -42,10 +55,6 @@ session_start();
            <div class="container" style="background-color:rgba(0,0,0, 0.4)" >
             <p><font size="5"><b>Phone </p><hr><?php echo "$phone" ?></b></font>
            </div></td>
-           <td rowspan="2" width="20%">
-           <div class="container" style="background-color:rgba(0,0,0, 0.4)" >
-            <p><font size="5"><b><img src="bip.jpg" height="300dp" width="310dp"></b></font></p>
-            </div></td>
           </tr>   
             <tr>  
                 <td>      

@@ -67,9 +67,10 @@ session_start();
        
         
        <div  class="container3" style="background-color:Black">
+       
             <table width="100%" height="10%" align="center" bgcolor="black">
             <tr>
-                <td width="8%"><font size="3"><b><div  class="container1" style="background-color:Green">QuestionBanK</b></div></font></td>
+                <th width="8%"><font size="3"><b><div  class="container1" style="background-color:Green">QuestionBanK</b></div></font></th>
                 <td  width="72%"></td>
                 <th width="8%"><font size="3"><b><div  class="container1" style="background-color:Green">Student</div></b></font></th>
                 <th><font size="3"><b><div  class="container1" style="background-color:Blue"><?php echo "$name" ?></div></font></th>

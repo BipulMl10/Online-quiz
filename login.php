@@ -28,7 +28,7 @@ if(mysqli_num_rows($get)>0)
     $phone=$record["phoneno"];
     $id1=$record["id"];
     $pass=$record["password"];
-    $photo=$record['photo0'];
+    $photo=$record['photo'];
 
     $_SESSION['name']=$name;
     $_SESSION['email']=$id;
@@ -37,11 +37,7 @@ if(mysqli_num_rows($get)>0)
     $_SESSION['phone']=$phone;
     $_SESSION['id']=$id1;
     $_SESSION['password']=$pass;
-    $filename    = $_FILES["photo"]["tmp_name"];
-    $destination = "upload/" . $_FILES["picture"]["name"]; 
-    move_uploaded_file($filename, $destination); //save uploaded picture in your directory
-
-    $_SESSION['user_name6'] = $destination;
+    $_SESSION['photo']=$photo;
 
     if($status=="student")
     {
@@ -53,11 +49,8 @@ if(mysqli_num_rows($get)>0)
 }
 else
 {
-    header('Location:login.html');
-    echo '<script language="javascript">';
-    echo 'alert("You donot have account or invalid username or password")';
-    echo '</script>';
-
+    $msg = "wrong";
+header("Location:login1.php?msg=$msg");
 }
 
 ?>

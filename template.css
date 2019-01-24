@@ -42,9 +42,25 @@ table,tr{
     width: 40%;
     border-radius: 20px;
 }
+.btn1 {
+  background-color: #4CAF50;
+     color: green;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 10%;
+     border-radius: 20px;
+ }
+ .registerbtn1:hover {
+  opacity:1;
+}
 
 .registerbtn:hover {
   opacity:1;
+}
+.cont{
+padding: 10px;
 }
  .container1 {
     padding: 10px;

@@ -1,16 +1,22 @@
 <?php
-
-$ques=$_POST['question'];
-$a=$_POST['a'];
-$b=$_POST['b'];
-$c=$_POST['c'];
-$d=$_POST['d'];
-$e=$_POST['e'];
+error_reporting(0);
 $conn=mysqli_connect("localhost","root","","project");
+$ques=$_POST['question'];
+$ans=$_POST['e'];
+$option=$_POST['make'];
+$array=array_values($option);
 
-$query="INSERT INTO questionbank (question,a,b,c,d,e) VALUES ('$ques','$a','$b','$c','$d','$e')";
+$a=$array[0];
+$b=$array[1];
+$c=$array[2];
+$d=$array[3];
+
+echo $a;
+$query="INSERT INTO questionbank(question, a, b, c,d,e) VALUES ('$ques','$a','$b','$c','$d','$ans')";
 mysqli_query($conn,$query);
-header("location:template.html");
+$msg = "wrong";
+header("Location:templatemain.php?msg=$msg");
+
 
 mysqli_close($conn);
 
